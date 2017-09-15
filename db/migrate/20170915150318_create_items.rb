@@ -2,8 +2,8 @@ class CreateItems < ActiveRecord::Migration[5.1]
   def change
     create_table :items do |t|
       t.string :name
-      t.string :picture
-      t.integer :number
+      t.string :pic_url
+      t.numeric :price
     end
   end
 end
