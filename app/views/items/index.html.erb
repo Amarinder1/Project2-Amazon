@@ -3,7 +3,7 @@
   <% @items.each do |item| %>
     <li>
       <%= link_to item.name, item_path(item) %>
-      <%= "Price: $" item.price %>
+      <%= item.price %>
       <%= image_tag item.pic_url %>
     </li>
   <% end %>
