@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20170915151344) do
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "pic_url"
-    t.decimal "price"
+    t.integer "price"
   end
 
 end

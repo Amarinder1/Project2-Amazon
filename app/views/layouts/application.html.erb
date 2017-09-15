@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project2Amazon</title>
+    <title>Amazon Webstore</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <div class="header">
+      <h2><%= link_to "Amazon", items_path %></h2>
+      <h2 class="total"><%= "Total: " %></h2>
+    </div>
     <%= yield %>
   </body>
 </html>

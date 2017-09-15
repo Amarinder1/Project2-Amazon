@@ -14,9 +14,36 @@
  *= require_self
  */
 
+body{
+  margin: 0px;
+}
+
 .items{
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content:space-between;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.header{
+  background-color: orange;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header a{
+  color: blue;
+  padding-left: 10px;
+}
+
+.header a:hover{
+  color: white;
+}
+
+.total{
+  margin-left: 70vw;
 }
