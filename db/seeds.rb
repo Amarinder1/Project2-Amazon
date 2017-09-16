@@ -28,5 +28,3 @@ fifteen = Item.create(name: "Backpack", pic_url: "https://images-na.ssl-images-a
 sixteen = Item.create(name: "Folding Fire Pit", pic_url: "https://images-na.ssl-images-amazon.com/images/I/91IqLLLFa%2BL._SL1500_.jpg", price: 50)
 seventeen = Item.create(name: "Samsung 55in 4K UHD Smart LED TV", pic_url: "https://images-na.ssl-images-amazon.com/images/I/815mq8Ync8L._SL1500_.jpg", price: 603)
 eighteen = Item.create(name: "Bose Headphones", pic_url: "https://images-na.ssl-images-amazon.com/images/I/61QwytXOcxL._SL1500_.jpg", price: 329)
-nineteen = Item.create(name: "Kate Spade Bracelet", pic_url: "https://images-na.ssl-images-amazon.com/images/I/61w7cpZvkYL._UX662_.jpg", price: 39)
-twenty = Item.create(name: "Sapphire Pendant", pic_url: "https://images-na.ssl-images-amazon.com/images/I/71jbuFIiICL._UY662_.jpg", price: 37)
