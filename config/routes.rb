@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'items#index'
-  resources :cart_items
-  resources :cart
+  resources :carts
   resources :items do
     member do
       post "add_to_cart"

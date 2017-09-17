@@ -12,6 +12,7 @@
     <div class="header">
       <h2><%= link_to "Amazon", items_path %></h2>
       <h2 class="total"><%= "Total: " %></h2>
+      <h2><%= link_to "Cart", carts_path%>
       <div class="user-info">
         <% if current_user %>
           Welcome, <%= current_user.email %>

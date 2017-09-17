@@ -1,0 +1,10 @@
+<%total = 0%>
+ <br>
+ <%@cart.items.each do |item|%>
+  <%=item.name%>
+  <%=item.price%>
+  <h2><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h2>
+  <%total += item.price%>
+<%end%>
+
+total: $ <%=total%>
