@@ -13,11 +13,12 @@
  *= require_tree .
  *= require_self
  */
- body, html{
-   margin: 0;
-   padding: 0;
- }
-.items{
+
+body{
+  margin: 0px;
+}
+
+.items, .item{
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -37,17 +38,70 @@
   position: fixed;
   display: flex;
   flex-direction: row;
+  background-color: orange;
+  width: 100%;
 }
 
 .header a{
   color: blue;
-  padding-left: 10px;
+  padding-left: 3vw;
 }
 
 .header a:hover{
   color: white;
 }
 
-.total{
+.cart{
   margin-left: 70vw;
 }
+
+.alert{
+  color: red;
+  margin-left: 3vw;
+}
+
+.notice{
+  color: blue;
+  margin-left: 3vw;
+}
+
+.user{
+  margin-left: 3vw;
+}
+
+/*for styling the button*/
+.button{
+  background-color: #f4511e;;
+  color: white;
+  font-size: 16px;
+  height: 60px;
+  width: 150px;
+  border: 1px;
+  text-decoration: none;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*end of styling button*/
