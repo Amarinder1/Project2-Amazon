@@ -1,8 +1,9 @@
 <div class="item">
   <ul>
-  <%= image_tag @item.pic_url, :class => "style_image" %>
+  <img class='style_image' src="<%= @item.pic_url %>">
   <br><h2><%= @item.name %></h2>
   <h2>Price $<%= @item.price %></h2>
   <button class="button"><span><%= link_to 'Add to Cart', add_to_cart_item_path(@item), method: :post%></span></button>
+  <a href="/items/<%= @item.id %>/edit">(edit)</a></h2>
   <ul>
 </div>
