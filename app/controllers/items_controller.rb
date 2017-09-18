@@ -13,12 +13,8 @@ class ItemsController < ApplicationController
   #WILL ONLY WORK IF USER IS SIGNED IN. ELSE WILL THROW AN ERROR
   def add_to_cart
     @item = Item.find(params[:id])
-    if current_user
-      current_user.cart.cart_items.create(item: @item)
-      flash[:notice] = "#{@item.name} was added to the cart"
-    else
-      flash[:alert] = "You have to be logged in to add an item to the cart"
-    end
+    current_user.cart.cart_items.create(item: @item)
+    flash[:notice] = "#{@item.name} was added to the cart"
     redirect_to items_path
   end
 

@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Item.destroy_all
-Cart_Item.destroy_all
+CartItem.destroy_all
 Cart.destroy_all
 
 one = Item.create(name: "Apple iPhone 7 Plus", pic_url: "https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/i/ph/iphone7plus/model/iphone7plus-model-select-201703?wid=1200&hei=630&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1489097365504", price: 800)
