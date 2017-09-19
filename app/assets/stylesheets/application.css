@@ -14,8 +14,9 @@
  *= require_self
  */
 
-body{
+body, html{
   margin: 0px;
+  height: 100%;
 }
 
 .items, .item{
@@ -35,42 +36,40 @@ body{
 }
 
 .header{
-  position: fixed;
   display: flex;
   flex-direction: row;
   background-color: orange;
   width: 100%;
 }
 
+.header h2{
+  margin-left: 3vw;
+  color: black;
+}
+
 .header a{
   color: blue;
-  padding-left: 3vw;
 }
 
 .header a:hover{
   color: white;
 }
 
-.cart{
-  margin-left: 70vw;
-}
-
 .alert{
   color: red;
-  margin-left: 3vw;
 }
 
 .notice{
   color: blue;
-  margin-left: 3vw;
 }
 
-.user{
-  margin-left: 3vw;
+.buttons{
+  margin-left: 20vw;
+  display: inline-block;
 }
 
-/*for styling the button*/
-.button{
+/*for styling add to cart button*/
+.button1{
   background-color: #f4511e;;
   color: white;
   font-size: 16px;
@@ -80,14 +79,14 @@ body{
   text-decoration: none;
 }
 
-.button span {
+.button1 span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+.button1 span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -96,12 +95,54 @@ body{
   transition: 0.5s;
 }
 
-.button:hover span {
+.button1:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.button1:hover span:after {
   opacity: 1;
   right: 0;
 }
-/*end of styling button*/
+/*end of styling for add to cart button*/
+
+.button2{
+  background-color: black;
+  font-size: 16px;
+  height: 60px;
+  width: 150px;
+  border: 1px;
+  text-decoration: none;
+}
+
+.button1 a, .button2 a{
+  color: white;
+}
+
+.button2 :visited{
+  color: white;
+}
+
+.signup a{
+  margin-bottom: 0;
+}
+
+.item{
+  margin-left: 20vw;
+}
+
+.cart{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.remove{
+  display: inline-block;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+}

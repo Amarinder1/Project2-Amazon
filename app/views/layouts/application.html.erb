@@ -12,22 +12,20 @@
     <div class="header">
       <h2><%= link_to "Amazon", items_path %></h2>
       <h2><%= link_to "Create a new item", new_item_path(@item) %></h2>
-      <!--can only see link for cart if user is logged in  -->
-      <%if current_user%>
-        <div class="cart">
-          <h2><%= link_to "Cart", carts_path%>
-        </div>
-      <%end%>
-
-    </div>
+      <h2><%= link_to "Cart", carts_path%>
+  </div>
 
     <div class="user">
       <% if current_user %>
-        <br><br><br><br><br>Welcome, <%= current_user.email %>
-        <br><%= link_to 'Signout', destroy_user_session_path, :method => :delete %>
+        <br><br><br><br>
+        <br>Welcome, <%= current_user.email %>
+        <br><br><%= link_to 'Signout', destroy_user_session_path, :method => :delete %>
       <% else %>
-        <br><br><br><br><br><%= link_to 'Signup', new_user_registration_path %>
-        <%= link_to 'Login', new_user_session_path %>
+        <br><br><br><br><br>
+        <div class="signup">
+          <%= link_to 'Signup', new_user_registration_path %>
+          <%= link_to 'Login', new_user_session_path %>
+        </div>
       <% end %>
     </div>
 
@@ -35,5 +33,11 @@
     <p class="alert"><%= alert %></p>
 
     <%= yield %>
+
+    <footer>
+      <p>About Us</p>
+      <p>Contact</p>
+      <p>Copyright 2017</p>
+    </footer>
   </body>
 </html>

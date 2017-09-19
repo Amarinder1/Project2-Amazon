@@ -1,10 +1,22 @@
-<%total = 0%>
- <br>
- <%@cart.items.each do |item|%>
-  <%=item.name%>
-  <%=item.price%>
-  <h2><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h2>
-  <%total += item.price%>
-<%end%>
+<% if current_user %>
+  <%total = 0%>
+   <br>
+   <%@cart.items.each do |item|%>
+   <br>
+    <div class="cart">
+      <h2><%=item.name%></h2>
+      <br><h2>$<%=item.price%></h2>
+    </div>
+    <div class="remove">
+      <h2><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h2>
+    </div>
+    <%total += item.price%>
+  <%end%>
 
-total: $ <%=total%>
+  <div class="total">
+    total: $ <%=total%>
+  </div>
+
+<%else%>
+  <% flash[:alert] = "You have to be logged in to view your cart"%>
+<%end%>
