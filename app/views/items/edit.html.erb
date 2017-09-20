@@ -1,3 +1,5 @@
-<h2> Edit this item<?h2>
-<%= render 'form' %>
-<%= link_to 'Delete', item_path(@item), method: :delete, class: 'delete' %>
+<div class="form">
+  <h2> Edit this item<?h2>
+  <%= render 'form' %>
+  <%= link_to 'Delete', item_path(@item), method: :delete, class: 'delete' %>
+</div>

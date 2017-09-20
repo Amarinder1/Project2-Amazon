@@ -4,17 +4,21 @@
    <%@cart.items.each do |item|%>
    <br>
     <div class="cart">
-      <h2><%=item.name%></h2>
-      <br><h2>$<%=item.price%></h2>
-    </div>
-    <div class="remove">
-      <h2><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h2>
+      <div id="name">
+        <h3><%=item.name%></h2>
+      </div>
+      <div id="price">
+        <h3>$<%=item.price%></h2>
+      </div>
+      <div id="remove">
+        <h3><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h2>
+      </div>
     </div>
     <%total += item.price%>
   <%end%>
 
   <div class="total">
-    total: $ <%=total%>
+    <h2>total: $ <%=total%></h2>
   </div>
 
 <%else%>

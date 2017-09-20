@@ -126,23 +126,45 @@ body, html{
   margin-bottom: 0;
 }
 
-.item{
+.cart{
+  display: block;
+}
+
+#name, .total{
+  margin-left: 3vw;
+}
+
+#price, #remove{
   margin-left: 20vw;
 }
 
-.cart{
-  display: inline-flex;
-  flex-direction: row;
+.total{
+  margin-top: 15vh;
 }
 
-.remove{
-  display: inline-block;
+.user{
+  margin-left: 40vw;
+  font-size: 20px;
 }
 
-footer{
-  background-color: black;
-  color: white;
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-around;
+.user a{
+  margin-left: 2vw;
+}
+
+input {
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 9px;
+  border: solid 1px black;
+  width: 300px;
+  background: whitesmoke;
+
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.form{
+    margin-left: 3vw;
 }
