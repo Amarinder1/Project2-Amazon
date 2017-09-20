@@ -19,6 +19,19 @@ body, html{
   height: 100%;
 }
 
+main{
+  display: flex;
+}
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: grey;
+  min-height: 100vh;
+  min-width: 25%;
+}
+
 .items, .item{
   display: inline-flex;
   flex-wrap: wrap;
@@ -35,23 +48,18 @@ body, html{
   max-height: 100%;
 }
 
-.header{
+header{
   display: flex;
   flex-direction: row;
   background-color: orange;
   width: 100%;
 }
 
-.header h2{
-  margin-left: 3vw;
-  color: black;
-}
-
-.header a{
+header a{
   color: blue;
 }
 
-.header a:hover{
+header a:hover{
   color: white;
 }
 
