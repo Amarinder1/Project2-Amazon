@@ -113,6 +113,7 @@ header a:hover{
 }
 /*end of styling for add to cart button*/
 
+/*styling of edit button*/
 .button2{
   background-color: black;
   font-size: 16px;
@@ -120,7 +121,34 @@ header a:hover{
   width: 150px;
   border: 1px;
   text-decoration: none;
+  color:white
 }
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*edn of styling edit button*/
 
 .button1 a, .button2 a{
   color: white;
