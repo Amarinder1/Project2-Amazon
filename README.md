@@ -8,7 +8,7 @@ Ruby, Rails
 
 ## features
 
-people who aren't signed up can't view their cart
+people who aren't signed up can't view their cart and can't add items to the cart
 
 users can sign up as a customer.
 
