@@ -55,11 +55,12 @@ class ItemsController < ApplicationController
   def remove_from_cart
     @item = Item.find(params[:id])
     current_user.cart.cart_items.find_by(item_id: params[:id]).destroy
-    redirect_to items_path, notice: "#{@item.name} was removed from the cart"
+    redirect_to items_path
+    flash[:notice] = "#{@item.name} was removed from the cart"
   end
 
-  def items_in_cart
-    @items = current_user.cart.items
+  def checkout
+    redirect_to items_path
   end
 
   private

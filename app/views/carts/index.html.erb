@@ -11,7 +11,7 @@
         <h3>$<%=item.price%></h2>
       </div>
       <div id="remove">
-        <h3><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h2>
+        <h3><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h3>
       </div>
     </div>
     <%total += item.price%>
@@ -21,7 +21,7 @@
     <h2>total: $ <%=total%></h2>
   </div>
 
-  <button class="checkout"><span>Checkout</span></button>
+  <button class="checkout"><span><%= link_to "Checkout", new_cart_path %></span></button>
 
 <%else%>
   <% flash[:alert] = "You have to be logged in to view your cart"%>
