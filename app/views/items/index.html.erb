@@ -1,9 +1,9 @@
 <% @items.each do |item| %>
   <div class="items">
     <ul>
-    <img class='style_image' src="<%= item.pic_url %>">
-    <br><%= link_to item.name, item_path(item) %>
-    <br>Price $<%= item.price %>
-    <ul>
+      <img class='style_image' src="<%= item.pic_url %>">
+      <br><%= link_to item.name, item_path(item) %>
+      <br>Price $<%= item.price %>
+    </ul>
   </div>
 <% end %>
