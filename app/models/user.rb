@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_one :cart
 
+  # AS - great job with this since we didn't go over it in class!
   #WILL CREATE A CART FOR THE USER
   after_create do
     Cart.create(user: self)
