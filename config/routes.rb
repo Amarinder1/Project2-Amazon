@@ -9,5 +9,4 @@ Rails.application.routes.draw do
       delete "checkout"
     end
   end
-
 end

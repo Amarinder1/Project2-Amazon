@@ -14,7 +14,8 @@
         <h3><%= link_to "Remove", remove_from_cart_item_path(item), method: :delete%></h3>
       </div>
     </div>
-    <%total += item.price%>
+    <%total += item.price%> 
+    <%# Great job here calculating the total! Could also be done in  the on the cart model -- I'll add the code there %>
   <%end%>
 
   <div class="total">
