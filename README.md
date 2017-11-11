@@ -6,15 +6,17 @@ A website where customers can order items from an online store.
 
 Ruby, Rails
 
+Used a gem called devise in order to allow people to create an account.
+
 ## features
 
-people who aren't signed up can't view their cart and can't add items to the cart
+People who aren't signed up can't view their cart.
 
-users can sign up as a customer.
+Users can sign up as a customer.
 
-you can add new items or edit current/new items
+You can add new items or edit current/new items.
 
-after clicking checkout, cart will become empty
+After clicking checkout, cart will become empty.
 
 ## installation instructions
 `git clone ` git@github.com:Amarinder1/Project2-Amazon.git
