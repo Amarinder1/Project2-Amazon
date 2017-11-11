@@ -22,6 +22,3 @@ after clicking checkout, cart will become empty
 `bundle install`
 
 `rails s`
-
-## unsolved problems
-using the twilio gem, I wanted to send the user a text message saying that their order has been placed, but I never got it to work
