@@ -6,6 +6,8 @@ A website where customers can order items from an online store.
 
 Ruby, Rails
 
+used a gem called devise in order to allow people to create an account
+
 ## features
 
 people who aren't signed up can't view their cart
@@ -22,6 +24,3 @@ after clicking checkout, cart will become empty
 `bundle install`
 
 `rails s`
-
-## unsolved problems
-using the twilio gem, I wanted to send the user a text message saying that their order has been placed, but I never got it to work
