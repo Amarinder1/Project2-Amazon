@@ -8,6 +8,8 @@ Ruby, Rails
 
 Used a gem called devise in order to allow people to create an account.
 
+Used PostgreSQL to create relational databases between users, carts, and items in carts.
+
 ## features
 
 People who aren't signed up can't view their cart.
