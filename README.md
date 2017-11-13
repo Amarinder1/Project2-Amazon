@@ -25,4 +25,6 @@ After clicking checkout, cart will become empty.
 
 `bundle install`
 
+`rails db:drop db:create db:migrate db:seed`
+
 `rails s`
