@@ -59,10 +59,12 @@ class ItemsController < ApplicationController
     flash[:notice] = "#{@item.name} was removed from the cart"
   end
 
+  # don't need this
   def checkout
     redirect_to items_path
   end
-
+  #
+  
   private
   def item_params
     params.require(:item).permit(:name, :pic_url, :price)
